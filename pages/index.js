@@ -44,7 +44,7 @@ function Home() {
                         <img src="/assets/imgs/elements/pattern.png" alt="Monst" />
                         <div className="absolute overflow-hidden" style={{ top: "9%", left: "14%", width: "72%", height: "150%" }}>
 
-                            <video autoPlay muted loop className='px-12 py-12' >
+                            <video autoPlay playsInline muted loop className='px-12 py-12' >
                                 <source src='/222-AUGTRACK-web.webm' />
                             </video>
 
@@ -200,7 +200,7 @@ function Home() {
                                 <div className="wow animate__animated animate__fadeIn" data-wow-delay=".5s">
                                    {/* <img className="jump relative mx-auto rounded-xl w-full z-10"
                                          src="/assets/imgs/placeholders/img-1.png" alt="Monst"/>*/}
-                                    <video autoPlay muted loop className=' px-8 py-8'>
+                                    <video playsInline autoPlay muted loop className=' px-8 py-8'>
                                         <source src="/heat-pic.webm" type="video/mp4"/>
                                     </video>
 
