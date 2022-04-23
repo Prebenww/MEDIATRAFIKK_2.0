@@ -46,16 +46,13 @@ function Home() {
                              style={{top: "9%", left: "14%", width: "72%", height: "150%"}}>
 
 
-
-
-
-                            <div className="w-full h-screen bg-gray-200 flex justify-center">
-                                <div className="bg-gray-400 relative z-0  ">
-                                    <video autoPlay playsInline muted loop className='p-8 mt-0   '>
+                            <div className="w-full h-screen bg-gray-200 flex justify-center items-center">
+                                <div className="bg-gray-400  relative z-0 ">
+                                    <video autoPlay playsInline muted loop className='p-12 pt-5'  >
                                         <source src='/necas.m4v'/>
                                     </video>
-                                    <div className="absolute inset-0 flex justify-center  z-10   ">
-                                        <img src="/phone.png" alt="frame" className='z-20  '/>
+                                    <div className="absolute inset-0 flex justify-center ml-5 z-10">
+                                        <img src="/phone-2.png" alt="frame" className='z-20  justify-center '/>
                                     </div>
                                 </div>
                             </div>
