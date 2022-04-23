@@ -51,8 +51,10 @@ function Home() {
                                    playsInline
                                    src=""> </video>*/}
 
+
+
                             <video autoPlay playsInline muted loop className='px-12 py-12'>
-                                <source src='https://augtrack.s3.eu-north-1.amazonaws.com/222-AUGTRACK-web.webm?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRjBEAiBho5mrJE44OsNGTnbe%2BeJlOmNwHpoM8bImt3KccHtfYgIgGLPgNdWPITFPv9%2BlhnnvWAK%2Fyy%2F6klDZDPWuXVJvT0Aq5AIIYBAAGgw4NTE0MTQ0MTIwMTciDPrcIxVayWwUWuPWCCrBAlW%2B2JjP13js%2BgTDDobZPySoXZE0aV5n%2F1GcWj5r47cmRkJHJaBojtJhjb4HIyQESs4p%2FmXPxSIbYTEa3suZ41UGY%2BBgfCuJSAlEqXbsC3tpwP1X%2B1OwXCtfes6voBybK4wjIYN%2Bgtu%2BV5OIpvfhc6S%2FXeKpWDpWrO3cYhR3tPAXTBbBWn7LxrCERdfXk1uVmJFQJh0hR32XYkBrXg2yYQOESvb%2Fj4Hdo4ls2G42bSix6DFL%2BmDEEQl86TqP9yUxnr%2F%2FJs4WVb%2F%2FZ3ZIyBX9K42uPRVcz%2F3KAtdYldpbdII5Y%2BLit3Ww%2F4jRIgHvnVwCdAgpV6nfMf6dx1Vk1g5RCmBL0rjANSVr%2FHQzoImvQYEjvnBAtOQHFudGKZyoUl%2FI41aSQVK%2BGB%2BXMpjaPJq%2BfNAduKaBWprtrpwrq3oLN3o0PTC0sZCTBjq0AtsIU7WN1cfMGYqJtwHdUWQjjH%2BbCbwVQqtc%2BcLr5Yh8A3WPQyKaxgYKuvMs1OV3dtobkMA7op9VtPEE4igREQ3GvYqIqozfo5CKATutL2vf3ZfVYarsUi%2FuujVNiUc78z7Yv7xiSdLqFTSwwv7qOnnYCQ8qlLDr2HtBGeo4FIMnIv10uYRc%2FfGWd31AFUqnyP0Y%2FtGSOfcf4SDr2h8f8%2FgQ6sDoUmShalX%2Fvx5whd4lRCYTM3re4PgUyrCnjhJEsYTBmh64co0Wbg4vSbRi4zeKP6AOpP4jU8BEkxEB0r7R7FGOEQwsmB8KOg2Ykh1g0KUWTIPLkjCtvm8u9AASPrUCG7l%2BWfX%2FYUAI5qyscfF5ygA7RicN%2BO%2Ff0wV7zQyO8Rie%2BHIJ5iwYDcrATaxZhDqjfTDJ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220423T152414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA4MPCA5LYQDXJ4OFT%2F20220423%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=e9a9077728e27a6c964df1ddfaae40bdb05a36feac039c47b7bc1fe7df1ba774'/>
+                                <source src='/555-aug.avi'/>
                             </video>
 
 
