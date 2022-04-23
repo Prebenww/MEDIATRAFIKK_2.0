@@ -41,18 +41,19 @@ function Home() {
 
 
                     <div className="relative max-w-6xl mt-0 md:mt-0 mb-8 mx-auto">
-                        <img src="/assets/imgs/elements/pattern.png" alt="Monst" />
-                        <div className="absolute overflow-hidden" style={{ top: "9%", left: "14%", width: "72%", height: "150%" }}>
+                        <img src="/assets/imgs/elements/pattern.png" alt="Monst"/>
+                        <div className="absolute overflow-hidden"
+                             style={{top: "9%", left: "14%", width: "72%", height: "150%"}}>
 
-                            <video loop
+                            {/*  <video loop
 
                                    id="selection-vid" width="100%" className="inline-video" autoPlay muted
                                    playsInline
-                                   src="https://s3-us-west-1.amazonaws.com/hawkeye-access-web-videos/urban_recording.m4v"> </video>
+                                   src=""> </video>*/}
 
-                         {/*   <video autoPlay playsInline muted loop className='px-12 py-12' >
-                                <source src='/222-AUGTRACK-web.webm' />
-                            </video>*/}
+                            <video autoPlay playsInline muted loop className='px-12 py-12'>
+                                <source src='/222-AUGTRACK-web.webm'/>
+                            </video>
 
                         </div>
                     </div>
@@ -165,7 +166,9 @@ function Home() {
                                         </div>
                                         <div>
                                             <h3 className="mb-2 text-xl font-semibold font-heading">Velg en pakke</h3>
-                                            <p className="text-blueGray-400 leading-loose">Velg den pakken som passer deg best, enten du skal ha heatmap av en enkel annonse eller et helt nettsted.</p>
+                                            <p className="text-blueGray-400 leading-loose">Velg den pakken som passer
+                                                deg best, enten du skal ha heatmap av en enkel annonse eller et helt
+                                                nettsted.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start py-4 wow animate__animated animate__fadeIn"
@@ -179,7 +182,8 @@ function Home() {
                                         </div>
                                         <div>
                                             <h3 className="mb-2 text-xl font-semibold font-heading">Last opp</h3>
-                                            <p className="text-blueGray-400 leading-loose">Last opp link til ditt nettsted eller annonse</p>
+                                            <p className="text-blueGray-400 leading-loose">Last opp link til ditt
+                                                nettsted eller annonse</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start py-4 wow animate__animated animate__fadeIn"
@@ -197,21 +201,28 @@ function Home() {
                                         </div>
                                         <div>
                                             <h3 className="mb-2 text-xl font-semibold font-heading">Motta Heatmap</h3>
-                                            <p className="text-blueGray-400 leading-loose">Motta ditt Heatmap på e-post etter 1-2 dager</p>
+                                            <p className="text-blueGray-400 leading-loose">Motta ditt Heatmap på e-post
+                                                etter 1-2 dager</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="relative w-full lg:w-1/2 my-12 lg:my-0">
                                 <div className="wow animate__animated animate__fadeIn" data-wow-delay=".5s">
-                                   {/* <img className="jump relative mx-auto rounded-xl w-full z-10"
+                                    {/* <img className="jump relative mx-auto rounded-xl w-full z-10"
                                          src="/assets/imgs/placeholders/img-1.png" alt="Monst"/>*/}
-                                    <video playsInline autoPlay muted loop className=' px-8 py-8'>
-                                        <source src="/heat-pic.webm" type="video/mp4"/>
-                                    </video>
 
 
-                                 {/*
+                                    <div className=' relative z-10'><img alt='heatmap'
+                                              src='/png-heat-v2.png' className='relative z-0 '/></div>
+
+                                    <div className='z-0'><img className="  absolute top-0 left-0 w-40 -ml-12 -mt-12"
+                                              src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/></div>
+                                    <div className='z-0'><img className=" -z-10 absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
+                                              src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/></div>
+
+
+                                    {/*
                                     <video loop=""
                                            poster="https://s3-us-west-1.amazonaws.com/hawkeye-access-web-videos/urban_thumb.png"
                                            id="selection-vid" width="100%" className="inline-video" autoPlay="" muted=""
@@ -219,10 +230,7 @@ function Home() {
                                            src="https://s3-us-west-1.amazonaws.com/hawkeye-access-web-videos/urban_recording.m4v"></video>
                                  */}
 
-                                    <img className="absolute top-0 left-0 w-40 -ml-12 -mt-12"
-                                         src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/>
-                                    <img className="absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
-                                         src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/>
+
                                 </div>
                             </div>
                         </div>
@@ -278,9 +286,8 @@ function Home() {
                                                 <span>1 side</span>
 
                                             </li>
-<br/>
-<br/>
-
+                                            <br/>
+                                            <br/>
 
 
                                         </ul>
@@ -353,7 +360,7 @@ function Home() {
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded"
                                            href="#">
-                                          Velg pakke
+                                            Velg pakke
                                         </a>
 
                                     </div>
@@ -415,7 +422,7 @@ function Home() {
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
                                            href="#">
-                                           Velg
+                                            Velg
                                         </a>
 
                                     </div>
@@ -425,7 +432,7 @@ function Home() {
                     </div>
                 </section>
 
-              {/*  <section className="py-12 md:py-20">
+                {/*  <section className="py-12 md:py-20">
                     <div className="container px-4 mx-auto">
                         <div className="flex flex-wrap -mx-3">
                             <div className="relative w-full lg:w-1/3 mb-8 lg:mb-0 text-center lg:text-left">
@@ -464,7 +471,9 @@ function Home() {
                                 </h2>
                             </div>
                             <div className="w-full lg:w-1/2">
-                                <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">Vi er eksperter på brukervennlig design og kan hjelpe deg å optmailisere ditt nettsted, annonse eller nettbutikk for å maksimere koverteringer slik at du når dine mål </p>
+                                <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">Vi
+                                    er eksperter på brukervennlig design og kan hjelpe deg å optmailisere ditt nettsted,
+                                    annonse eller nettbutikk for å maksimere koverteringer slik at du når dine mål </p>
                             </div>
                         </div>
                         <div className="flex flex-wrap -mx-3 -mb-6 text-center">
@@ -478,7 +487,8 @@ function Home() {
                                     <img className="h-36 mx-auto my-4" src="/assets/imgs/illustrations/eating.svg"
                                          alt="Monst"/>
                                     <h3 className="mb-2 font-bold font-heading text-xl">Utvikle ideer</h3>
-                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi har mange kreative hoder som gjerne hjelper deg med innovative ideer til markedsføring eller design. </p>
+                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi har mange kreative hoder
+                                        som gjerne hjelper deg med innovative ideer til markedsføring eller design. </p>
                                 </div>
                             </div>
                             <div
@@ -491,7 +501,8 @@ function Home() {
                                     <img className="h-36 mx-auto my-4" src="/assets/imgs/illustrations/space.svg"
                                          alt="Monst"/>
                                     <h3 className="mb-2 font-bold font-heading text-xl">Planlegging</h3>
-                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi hjelper deg å planlegge og implemetere de beste løsningene for din tjeneste eller nettside</p>
+                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi hjelper deg å planlegge
+                                        og implemetere de beste løsningene for din tjeneste eller nettside</p>
                                 </div>
                             </div>
                             <div className="hover-up-5 w-full lg:w-1/3 px-3 mb-6">
@@ -503,7 +514,8 @@ function Home() {
                                     <img className="h-36 mx-auto my-4" src="/assets/imgs/illustrations/tasks.svg"
                                          alt="Monst"/>
                                     <h3 className="mb-2 font-bold font-heading text-xl">Gjennomføring</h3>
-                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi driver med Heatmaps så vi vet at du  at du sannsynligvis ikke leser dette - så kredz til deg!</p>
+                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi driver med Heatmaps så
+                                        vi vet at du at du sannsynligvis ikke leser dette - så kredz til deg!</p>
                                 </div>
                             </div>
                         </div>
@@ -543,7 +555,7 @@ function Home() {
                                     <button
                                         className="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
                                         type="submit">
-                                       Send
+                                        Send
                                     </button>
                                 </div>
                             </div>
@@ -556,3 +568,4 @@ function Home() {
 }
 
 export default Home
+
