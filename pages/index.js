@@ -52,7 +52,7 @@ function Home() {
                                    src=""> </video>*/}
 
                             <video autoPlay playsInline muted loop className='px-12 py-12'>
-                                <source src='https://i.imgur.com/Q6CrzKY.mp4'/>
+                                <source src='https://res.cloudinary.com/db9b1sbv1/video/upload/v1650725233/222-AUGTRACK-web_xnp0xu.webm'/>
                             </video>
 
 
