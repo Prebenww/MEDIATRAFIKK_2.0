@@ -45,21 +45,27 @@ function Home() {
                         <div className="absolute overflow-hidden"
                              style={{top: "9%", left: "14%", width: "72%", height: "150%"}}>
 
-                            {/*  <video loop
-
-                                   id="selection-vid" width="100%" className="inline-video" autoPlay muted
-                                   playsInline
-                                   src=""> </video>*/}
 
 
 
-                            <video autoPlay playsInline muted loop className='px-12 py-12'>
-                                <source src='/555-aug.avi'/>
-                            </video>
+
+                            <div className="w-full h-screen bg-gray-200 flex justify-center">
+                                <div className="bg-gray-400 relative z-0  ">
+                                    <video autoPlay playsInline muted loop className='p-8 mt-0   '>
+                                        <source src='/necas.m4v'/>
+                                    </video>
+                                    <div className="absolute inset-0 flex justify-center  z-10   ">
+                                        <img src="/phone.png" alt="frame" className='z-20  '/>
+                                    </div>
+                                </div>
+                            </div>
+
 
 
                         </div>
                     </div>
+
+
 
                     <div className="container pt-40 px-4 mx-auto mt-32 ">
                         <div className="flex flex-wrap justify-between pt-8 pb-16 ">
@@ -217,12 +223,15 @@ function Home() {
 
 
                                     <div className=' relative z-10'><img alt='heatmap'
-                                              src='/png-heat-v2.png' className='relative z-0 '/></div>
+                                                                         src='/png-heat-v2.png'
+                                                                         className='relative z-0 '/></div>
 
                                     <div className='z-0'><img className="  absolute top-0 left-0 w-40 -ml-12 -mt-12"
-                                              src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/></div>
-                                    <div className='z-0'><img className=" -z-10 absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
-                                              src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/></div>
+                                                              src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/>
+                                    </div>
+                                    <div className='z-0'><img
+                                        className=" -z-10 absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
+                                        src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/></div>
 
 
                                     {/*
