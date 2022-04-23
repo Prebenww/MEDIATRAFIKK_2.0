@@ -44,15 +44,15 @@ function Home() {
                         <img src="/assets/imgs/elements/pattern.png" alt="Monst" />
                         <div className="absolute overflow-hidden" style={{ top: "9%", left: "14%", width: "72%", height: "150%" }}>
 
-                          {/*  <video loop
+                            <video loop
 
                                    id="selection-vid" width="100%" className="inline-video" autoPlay muted
                                    playsInline
-                                   src="https://s3-us-west-1.amazonaws.com/hawkeye-access-web-videos/urban_recording.m4v"> </video>*/}
+                                   src="https://s3-us-west-1.amazonaws.com/hawkeye-access-web-videos/urban_recording.m4v"> </video>
 
-                            <video autoPlay playsInline muted loop className='px-12 py-12' >
+                         {/*   <video autoPlay playsInline muted loop className='px-12 py-12' >
                                 <source src='/222-AUGTRACK-web.webm' />
-                            </video>
+                            </video>*/}
 
                         </div>
                     </div>
