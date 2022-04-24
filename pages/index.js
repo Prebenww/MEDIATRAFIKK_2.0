@@ -2,25 +2,31 @@ import CounterUp from "../components/elements/Counterup"
 import TextEffect from "../components/elements/TextEffect"
 import Layout from "../components/layout/Layout"
 import Slider1 from "../components/slider/Slider1"
-import {useState} from "react";
 
-function Home({ deviceType }) {
+
+//shopify
+
+import { useState, useEffect, useContext } from "react"
+import {formatter} from '../utils/helpers'
+import { CartContext} from "../context/shopContext";
+
+function Home({ deviceType, product }) {
     console.log("DEVICE:",deviceType)
 
+
+
+
+
+
+
+
     const [smallPhone, setSmallPhone] = useState(deviceType !== 'desktop');
-
-
-  /*  if (deviceType === 'desktop') {
-        setSmallPhone(false)
-    } else {
-        setSmallPhone(true);
-    }*/
 
     console.log(smallPhone)
 
     const LargePhone = () => {
         return (
-            <video autoPlay loop playsInline className='jump wow rounded animate__animated animate__fadeIn  ' type='video/webm' >
+            <video autoPlay muted loop playsInline className='jump wow rounded animate__animated animate__fadeIn  ' type='video/webm' >
                 <source  src='/222-AUGTRACK-web.webm' />
             </video>
         )
@@ -65,7 +71,8 @@ function Home({ deviceType }) {
                                 </p>
                             </div>
                             <div>
-                                <a className="btn-primary py-4 px-8 mr-2 wow animate__animated animate__fadeIn hover-up-2"
+                                <a
+                                    className="btn-primary py-4 px-8 mr-2 wow animate__animated animate__fadeIn hover-up-2"
                                    href="#plan2">
                                     Bestill
                                 </a>
@@ -342,9 +349,10 @@ function Home({ deviceType }) {
                                     </div>
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
-                                           href="#">
+                                           href="https://future-high-demand.myshopify.com/61601874109/checkouts/0b45b0edfee6b17a4b5fe9282d87a015">
                                             Velg pakke
                                         </a>
+
 
                                     </div>
                                 </div>
@@ -407,7 +415,7 @@ function Home({ deviceType }) {
                                     </div>
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded"
-                                           href="#">
+                                           href="https://future-high-demand.myshopify.com/61601874109/checkouts/7f773790a2a8c6c8f9756cbb9fc24cbd">
                                             Velg pakke
                                         </a>
 
@@ -443,7 +451,7 @@ function Home({ deviceType }) {
                                                           stroke-width="2"
                                                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                                 </svg>
-                                                <span>Hele nettsted</span>
+                                                <span>Hele nettstedet</span>
                                             </li>
                                             <li className="flex mb-3">
                                                 <svg className="w-6 h-6 mr-2 text-green-500"
@@ -469,7 +477,7 @@ function Home({ deviceType }) {
                                     </div>
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
-                                           href="#">
+                                           href="https://future-high-demand.myshopify.com/61601874109/checkouts/7f773790a2a8c6c8f9756cbb9fc24cbd">
                                             Velg
                                         </a>
 
