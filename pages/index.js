@@ -20,7 +20,7 @@ function Home({ deviceType }) {
 
     const LargePhone = () => {
         return (
-            <video autoPlay loop className=' jump wow rounded animate__animated animate__fadeIn' type='video/webm' >
+            <video autoPlay loop playsInline className='jump wow rounded animate__animated animate__fadeIn  ' type='video/webm' >
                 <source  src='/222-AUGTRACK-web.webm' />
             </video>
         )
@@ -30,7 +30,7 @@ function Home({ deviceType }) {
 
     const SmallPhone = () => {
         return (
-            <div className="w-full h-screen bg-gray-200 flex justify-center items-center">
+            <div className="w-full mt-6 h-screen bg-gray-200 flex justify-center items-center">
                 <div className="bg-gray-400  relative z-0 ">
                     <video autoPlay playsInline muted loop className='p-6 pt-5 '  >
                         <source src='/necas.m4v'/>
@@ -79,10 +79,16 @@ function Home({ deviceType }) {
                     </div>
 
 
-                    <div className="relative max-w-6xl mt-0 md:mt-0 mb-8 mx-auto">
-                        <img src="/assets/imgs/elements/pattern.png" alt="Monst"/>
-                        <div className="absolute overflow-hidden"
-                             style={{top: "9%", left: "14%", width: "72%", height: "150%"}}>
+                    <div>
+                    <div className="relative max-w-6xl mt-0   md:mt-0 mb-8  mx-auto ">
+                        <img className='' src="/assets/imgs/elements/pattern.png" alt="Monst"/>
+                        <img className='' src="/assets/imgs/elements/pattern.png" alt="Monst"/>
+
+                        {smallPhone ?  <img className='' src="/assets/imgs/elements/pattern.png" alt="Monst"/> : <img className='' src="/assets/imgs/elements/pattern-27.png" alt="Monst"/>}
+
+
+                        <div className=" absolute"
+                             style={{top: "0", left: "14%", width: "72%", height: "150%"}}>
 
 
                             {smallPhone ? <SmallPhone/> : <LargePhone/>}
@@ -90,11 +96,15 @@ function Home({ deviceType }) {
 
                         </div>
                     </div>
+                    </div>
 
 
 
-                    <div className="container pt-40 px-4 mx-auto mt-32 ">
-                        <div className="flex flex-wrap justify-between pt-8 pb-16 ">
+
+
+
+                    <div className=" container  px-4 mx-auto  ">
+                        <div className="flex flex-wrap justify-between xs:pt-24 pb-16 ">
                             <div className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate__animated animate__fadeIn"
                                  data-wow-delay=".2s">
                                 <div
