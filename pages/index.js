@@ -349,7 +349,7 @@ function Home({ deviceType, product }) {
                                     </div>
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
-                                           href="https://future-high-demand.myshopify.com/61601874109/checkouts/0b45b0edfee6b17a4b5fe9282d87a015">
+                                           href="https://aug-shop.vercel.app/products/enkel">
                                             Velg pakke
                                         </a>
 
@@ -415,7 +415,7 @@ function Home({ deviceType, product }) {
                                     </div>
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded"
-                                           href="https://future-high-demand.myshopify.com/61601874109/checkouts/7f773790a2a8c6c8f9756cbb9fc24cbd">
+                                           href="https://aug-shop.vercel.app/products/giga">
                                             Velg pakke
                                         </a>
 
@@ -477,7 +477,7 @@ function Home({ deviceType, product }) {
                                     </div>
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
-                                           href="https://future-high-demand.myshopify.com/61601874109/checkouts/7f773790a2a8c6c8f9756cbb9fc24cbd">
+                                           href="https://aug-shop.vercel.app/products/enterprise">
                                             Velg
                                         </a>
 
