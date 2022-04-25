@@ -12,6 +12,19 @@ const Header = ({handleHidden}) => {
           }
         })
       })
+
+    useEffect(() => {
+
+            window._mfq = window._mfq || [];
+            (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.defer = true;
+            mf.src = "//cdn.mouseflow.com/projects/b9f37824-9213-4cd7-b373-451223f42588.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+
+    }, []);
+
     return (
         <>
             <header className={scroll ? "bg-transparent sticky-bar mt-4 stick": "bg-transparent sticky-bar mt-4"}>
@@ -85,7 +98,11 @@ const Header = ({handleHidden}) => {
                     </nav>
                 </div>
             </header>
+
+
+
         </>
+
     );
 };
 

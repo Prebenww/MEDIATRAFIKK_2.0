@@ -9,6 +9,7 @@ import Slider1 from "../components/slider/Slider1"
 import { useState, useEffect, useContext } from "react"
 import {formatter} from '../utils/helpers'
 import { CartContext} from "../context/shopContext";
+import Preloader from "../components/elements/Preloader";
 
 function Home({ deviceType, product }) {
     console.log("DEVICE:",deviceType)
@@ -53,6 +54,7 @@ function Home({ deviceType, product }) {
     return (
         <>
             <Layout>
+                <Preloader/>
                 <section className=" flex flex-col justify-center xl:bg-contain bg-top bg-no-repeat -mt-24 pt-24 "
                          style={{backgroundImage: "url('assets/imgs/backgrounds/intersect.svg')"}}>
                     <div className="container px-4 mx-auto">
@@ -63,7 +65,7 @@ function Home({ deviceType, product }) {
                                     sine <span className="text-blue-500">øyne</span> beveger seg.
                                 </h2>
                                 <p className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
-                                    Vi er <strong className="text-blue-500">AugTrack</strong>, vi gir deg et heatmap av
+                                    Vi er <strong className="text-blue-500">AUGTRACK</strong>, vi gir deg et heatmap av
                                     din {" "}
                                     <span className="typewrite d-inline text-brand">
                                         <TextEffect text1="nettside" text2="app" text3='annonse'/>
