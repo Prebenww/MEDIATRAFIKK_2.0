@@ -54,7 +54,7 @@ function Home({ deviceType, product }) {
     return (
         <>
             <Layout>
-                <Preloader/>
+
                 <section className=" flex flex-col justify-center xl:bg-contain bg-top bg-no-repeat -mt-24 pt-24 "
                          style={{backgroundImage: "url('assets/imgs/backgrounds/intersect.svg')"}}>
                     <div className="container px-4 mx-auto">
