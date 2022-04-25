@@ -10,6 +10,7 @@ import { useState, useEffect, useContext } from "react"
 import {formatter} from '../utils/helpers'
 import { CartContext} from "../context/shopContext";
 import Preloader from "../components/elements/Preloader";
+import Services from "./services";
 
 function Home({ deviceType, product }) {
     console.log("DEVICE:",deviceType)
@@ -192,6 +193,297 @@ function Home({ deviceType, product }) {
                     </div>
                 </section>
 
+
+                <section className="pt-12">
+                    <div className="container py-12 mx-auto">
+                        <div className="flex flex-wrap">
+                            <div className="w-full md:w-1/2 pr-12 px-3 order-0 md:order-0 mb-12 md:mb-0 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                                <img className="sm:max-w-sm lg:max-w-full mx-auto" src="/png-heat-v2.png" alt="Monst" />
+
+                            </div>
+                            <div className="w-full md:w-1/2 px-3 order-1 md:order-1">
+                                <div className="max-w-md-2">
+                                    <div className="mb-4">
+                                        <span className="text-xs py-1 px-3 text-blue-500 font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown" data-wow-delay=".9s">
+                                            Flere metoder
+                                        </span>
+                                        <h2 className="text-4xl mt-3 font-bold font-heading wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+                                            Fremtidens UX-testing <br/>
+                                            - rett foran  <span className="text-blue-500"> øynene dine</span>
+                                        </h2>
+                                    </div>
+
+                                    <p className="mb-6 leading-loose text-blueGray-400 wow animate__animated animate__fadeIn" data-wow-delay=".1s">
+                                        Vi tilbyr flere innovative metoder for å kartlegge adferden til din brukere. Hvor dem klikker, hvor dem beveger seg - til og med hvor øynene deres beveger seg på nettsiden.
+                                    </p>
+
+                                    <div className="flex flex-wrap">
+                                        <div className="w-full md:w-1/2 items-start pt-4 pb-8 wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+                                            <div className="w-8 mb-5 text-blue-500">
+                                                <span className="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">1</span>
+                                            </div>
+                                            <div>
+                                                <h3 className="mb-2 text-xl font-semibold font-heading">Eye-tracking</h3>
+                                                <p className="text-blueGray-400 leading-loose text-sm">Avansert øye-tracking viser hvor brukere ser på nettsiden din</p>
+                                            </div>
+                                        </div>
+                                        <div className="w-full md:w-1/2 items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+                                            <div className="w-8 mb-5 text-blue-500">
+                                                <span className="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">2</span>
+                                            </div>
+                                            <div>
+                                                <h3 className="mb-2 text-xl font-semibold font-heading">Scroll-map</h3>
+                                                <p className="text-blueGray-400 leading-loose text-sm">Scroll-mapping viser hvor langt ned en bruker blar før han gir opp.</p>
+                                            </div>
+                                        </div>
+                                        <div className="w-full md:w-1/2 items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".4s">
+                                            <div className="w-8 mb-5 text-blue-500">
+                                                <span className="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">3</span>
+                                            </div>
+                                            <div>
+                                                <h3 className="mb-2 text-xl font-semibold font-heading">Click-tracking</h3>
+                                                <p className="text-blueGray-400 leading-loose text-sm">Tracker klikk på siden, hva klikker brukere på, hvor lenge nøler de før de klikker, etc</p>
+                                            </div>
+                                        </div>
+                                        <div className="w-full md:w-1/2 items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                                            <div className="w-8 mb-5 text-blue-500">
+                                                <span className="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">4</span>
+                                            </div>
+                                            <div>
+                                                <h3 className="mb-2 text-xl font-semibold font-heading">Geo-tracking</h3>
+                                                <p className="text-blueGray-400 leading-loose text-sm">Geo tracking som viser geografisk innsikt om brukere.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+                <section id='plan2' className="py-20 xl:bg-contain bg-top bg-no-repeat"
+                         style={{backgroundImage: "url('assets/imgs/backgrounds/intersect.svg')"}}>
+                    <div className="container px-4 mx-auto">
+                        <div className="text-center mb-16">
+                            <h2 className="max-w-lg mx-auto mb-4 text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
+                                data-wow-delay=".2s">
+                                <span>Velg den   <span className="text-blue-500"> heatmap </span>-pakken som passer best for deg</span>
+
+
+                            </h2>
+                            <p className="max-w-sm mx-auto text-lg text-blueGray-400 wow animate__animated animate__fadeInDown"
+                               data-wow-delay=".5s">
+                                Ingen abonnement eller binding. Du blir ikke trukket før du mottar ditt heatmap.
+                            </p>
+                        </div>
+
+                        <div className="flex flex-wrap -mx-3">
+                            <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+                                <div
+                                    className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".2s">
+                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/startup.svg"
+                                         alt="Monst"/>
+                                    <h3 className="mb-2 text-4xl font-bold font-heading">Enkel</h3>
+                                    <span className="text-4xl text-blue-500 font-bold font-heading">439 NOK</span>
+                                    <p className="mt-2 mb-8 text-blueGray-400">inkl mva</p>
+                                    <div className="flex flex-col items-center mb-8">
+                                        <ul className="text-blueGray-400">
+                                            <li className="flex mb-3">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+                                                <span>Heatmap</span>
+                                            </li>
+                                            <li className="flex mb-3">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+                                                <span>Eye-tracking</span>
+<br/>
+<br/>
+                                            </li>
+
+                                            <li className="flex mb-3">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+                                                <span>1 side</span>
+
+                                            </li>
+                                            <br/>
+                                            <br/>
+
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                                           href="https://aug-shop.vercel.app/products/enkel">
+                                            Velg pakke
+                                        </a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+                                <div
+                                    className="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded shadow wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".4s">
+                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/agency.svg" alt="Monst"/>
+                                    <h3 className="mb-2 text-4xl font-bold font-heading">Giga</h3>
+                                    <span className="text-4xl font-bold font-heading">999 NOK</span>
+                                    <p className="mt-2 mb-8">inkl mva</p>
+                                    <div className="flex flex-col items-center mb-8">
+                                        <ul>
+                                            <li className="flex items-center mb-3">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+                                                <span>Heatmap</span>
+                                            </li>
+                                            <li className="flex items-center mb-3">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+
+                                                <span>Eye-tracking</span>
+                                            </li>
+                                            <li className="flex items-center mb-3">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+
+                                                <span>Opp til 5 sider</span>
+                                            </li>
+                                            <li className="flex items-center">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+
+                                                <span>Rådgivning basert på funn</span>
+
+                                            </li>
+                                            <br/>
+                                            <br/>
+
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded"
+                                           href="https://aug-shop.vercel.app/products/giga">
+                                            Velg pakke
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full lg:w-1/3 px-3 mb-6">
+                                <div
+                                    className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".6s">
+                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/enterprise.svg"
+                                         alt="Monst"/>
+                                    <h3 className="mb-2 text-4xl font-bold font-heading">Enterprise</h3>
+                                    <span className="text-4xl text-blue-500 font-bold font-heading">-</span>
+                                    <p className="mt-2 mb-8 text-blueGray-400">Kontakt oss for informajson</p>
+                                    <div className="flex flex-col items-center mb-8">
+                                        <ul className="text-blueGray-400">
+                                            <li className="flex mb-3">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+                                                <span>Heatmap</span>
+                                            </li>
+                                            <li className="flex mb-3">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+                                                <span>Eye-tracking</span>
+                                            </li>
+                                            <li className="flex mb-3">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+                                                <span>Scroll-tracking</span>
+                                            </li>
+                                            <li className="flex">
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+                                                <span>Click-tracing</span>
+                                                <br/>
+                                                <br/>
+                                                <br/>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                                           href="https://aug-shop.vercel.app/products/enterprise">
+                                            Velg
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/*section*/}
                 <section className="pt-8 pb-12 md:py-16 lg:py-16 overflow-x-hidden" id="key-features">
                     <div className="container px-4 mx-auto">
                         <div className="flex flex-wrap lg:flex-nowrap">
@@ -268,15 +560,16 @@ function Home({ deviceType, product }) {
 
 
                                     <div className=' relative z-10'><img alt='heatmap'
-                                                                         src='/png-heat-v2.png'
+                                                                         src='/how-to-order.png'
                                                                          className='relative z-0 '/></div>
 
                                     <div className='z-0'><img className="  absolute top-0 left-0 w-40 -ml-12 -mt-12"
                                                               src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/>
                                     </div>
-                                    <div className='z-0'><img
-                                        className=" -z-10 absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
-                                        src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/></div>
+                                    <div className='z-0'>
+                                        <img
+                                            className=" -z-10 absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
+                                            src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/></div>
 
 
                                     {/*
@@ -288,202 +581,6 @@ function Home({ deviceType, product }) {
                                  */}
 
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id='plan2' className="py-20 xl:bg-contain bg-top bg-no-repeat"
-                         style={{backgroundImage: "url('assets/imgs/backgrounds/intersect.svg')"}}>
-                    <div className="container px-4 mx-auto">
-                        <div className="text-center mb-16">
-                            <h2 className="max-w-lg mx-auto mb-4 text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
-                                data-wow-delay=".2s">
-                                <span>Velg den   <span className="text-blue-500"> heatmap </span>-pakken som passer best for deg</span>
-
-
-                            </h2>
-                            <p className="max-w-sm mx-auto text-lg text-blueGray-400 wow animate__animated animate__fadeInDown"
-                               data-wow-delay=".5s">
-                                Ingen abonnement eller binding. Du blir ikke trukket før du mottar ditt heatmap.
-                            </p>
-                        </div>
-
-                        <div className="flex flex-wrap -mx-3">
-                            <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
-                                <div
-                                    className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
-                                    data-wow-delay=".2s">
-                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/startup.svg"
-                                         alt="Monst"/>
-                                    <h3 className="mb-2 text-4xl font-bold font-heading">Enkel</h3>
-                                    <span className="text-4xl text-blue-500 font-bold font-heading">439 NOK</span>
-                                    <p className="mt-2 mb-8 text-blueGray-400">inkl mva</p>
-                                    <div className="flex flex-col items-center mb-8">
-                                        <ul className="text-blueGray-400">
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>Heatmap</span>
-                                            </li>
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>1 side</span>
-
-                                            </li>
-                                            <br/>
-                                            <br/>
-
-
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
-                                           href="https://aug-shop.vercel.app/products/enkel">
-                                            Velg pakke
-                                        </a>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
-                                <div
-                                    className="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded shadow wow animate__animated animate__fadeIn"
-                                    data-wow-delay=".4s">
-                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/agency.svg" alt="Monst"/>
-                                    <h3 className="mb-2 text-4xl font-bold font-heading">Giga</h3>
-                                    <span className="text-4xl font-bold font-heading">999 NOK</span>
-                                    <p className="mt-2 mb-8">inkl mva</p>
-                                    <div className="flex flex-col items-center mb-8">
-                                        <ul>
-                                            <li className="flex items-center mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>Heatmap</span>
-                                            </li>
-                                            <li className="flex items-center mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-
-                                                <span>Opp til 5 sider</span>
-                                            </li>
-                                            <li className="flex items-center mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-
-                                                <span>UX analyse</span>
-                                            </li>
-                                            <li className="flex items-center">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-
-                                                <span>Rådgivning basert på funn</span>
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded"
-                                           href="https://aug-shop.vercel.app/products/giga">
-                                            Velg pakke
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full lg:w-1/3 px-3 mb-6">
-                                <div
-                                    className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
-                                    data-wow-delay=".6s">
-                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/enterprise.svg"
-                                         alt="Monst"/>
-                                    <h3 className="mb-2 text-4xl font-bold font-heading">Enterprise</h3>
-                                    <span className="text-4xl text-blue-500 font-bold font-heading">-</span>
-                                    <p className="mt-2 mb-8 text-blueGray-400">Kontakt oss for informajson</p>
-                                    <div className="flex flex-col items-center mb-8">
-                                        <ul className="text-blueGray-400">
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>Heatmap</span>
-                                            </li>
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>Hele nettstedet</span>
-                                            </li>
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>UX analyse</span>
-                                            </li>
-                                            <li className="flex">
-                                                <svg className="w-6 h-6 mr-2 text-green-500"
-                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                     stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>Veiledning</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
-                                           href="https://aug-shop.vercel.app/products/enterprise">
-                                            Velg
-                                        </a>
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
