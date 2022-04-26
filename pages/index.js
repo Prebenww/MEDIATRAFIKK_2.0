@@ -308,9 +308,8 @@ function Home({ deviceType, product }) {
                                                           stroke-width="2"
                                                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                                 </svg>
-                                                <span>Eye-tracking</span>
-<br/>
-<br/>
+                                                <span>Eye-tracking (beta)</span>
+
                                             </li>
 
                                             <li className="flex mb-3">
@@ -325,6 +324,10 @@ function Home({ deviceType, product }) {
 
                                             </li>
 
+                                            <br/>
+                                            <br/>
+                                            <br/>
+
 
                                         </ul>
                                     </div>
@@ -336,8 +339,6 @@ function Home({ deviceType, product }) {
 
 
                                     </div>
-                                    <br/>
-                                    <br/>
 
                                 </div>
                             </div>
@@ -370,7 +371,7 @@ function Home({ deviceType, product }) {
                                                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                                 </svg>
 
-                                                <span>Eye-tracking</span>
+                                                <span>Eye-tracking (beta)</span>
                                             </li>
                                             <li className="flex items-center mb-3">
                                                 <svg className="w-6 h-6 mr-2 text-green-500"
@@ -439,7 +440,7 @@ function Home({ deviceType, product }) {
                                                           stroke-width="2"
                                                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                                 </svg>
-                                                <span>Eye-tracking</span>
+                                                <span>Eye-tracking (beta)</span>
                                             </li>
                                             <li className="flex mb-3">
                                                 <svg className="w-6 h-6 mr-2 text-green-500"
@@ -471,7 +472,7 @@ function Home({ deviceType, product }) {
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
                                            href="https://aug-shop.vercel.app/products/enterprise">
-                                            Velg
+                                            Velg pakke
                                         </a>
 
                                     </div>
