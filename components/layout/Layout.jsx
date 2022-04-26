@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <title>Monst - NextJs Tailwind CSS Landing Page</title>
+                <title>AUGTRACK - the future of UX-testing</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
                     rel="preconnect"

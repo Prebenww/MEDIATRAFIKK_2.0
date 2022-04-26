@@ -19,9 +19,6 @@ function Home({ deviceType, product }) {
 
 
 
-
-
-
     const [smallPhone, setSmallPhone] = useState(deviceType !== 'desktop');
 
     console.log(smallPhone)
