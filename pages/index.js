@@ -324,8 +324,6 @@ function Home({ deviceType, product }) {
                                                 <span>1 side</span>
 
                                             </li>
-                                            <br/>
-                                            <br/>
 
 
                                         </ul>
@@ -338,6 +336,9 @@ function Home({ deviceType, product }) {
 
 
                                     </div>
+                                    <br/>
+                                    <br/>
+
                                 </div>
                             </div>
                             <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
