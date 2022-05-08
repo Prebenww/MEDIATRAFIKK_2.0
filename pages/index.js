@@ -7,14 +7,7 @@ import Slider1 from "../components/slider/Slider1"
 //shopify
 
 import { useState, useEffect, useContext } from "react"
-import {formatter} from '../utils/helpers'
-import { CartContext} from "../context/shopContext";
-import Preloader from "../components/elements/Preloader";
-import Services from "./services";
-import Index2 from "./index-2";
-import Index3 from "./index-3";
-import Index4 from "./index-4";
-import Index5 from "./index-5";
+
 
 function Home({ deviceType, product }) {
     console.log("DEVICE:",deviceType)
@@ -29,9 +22,8 @@ function Home({ deviceType, product }) {
 
     const LargePhone = () => {
         return (
-            <video autoPlay muted loop playsInline className='jump wow rounded animate__animated animate__fadeIn  ' type='video/webm' >
-                <source  src='/222-AUGTRACK-web.webm' />
-            </video>
+
+            <img src="/insta-pre.png" alt="frame" className='jump wow rounded animate__animated animate__fadeIn  '/>
         )
     }
 
@@ -39,16 +31,8 @@ function Home({ deviceType, product }) {
 
     const SmallPhone = () => {
         return (
-            <div className="w-full mt-6 h-screen bg-gray-200 flex justify-center items-center">
-                <div className="bg-gray-400  relative z-0 ">
-                    <video autoPlay playsInline muted loop className='p-6 pt-5 '  >
-                        <source src='/necas.m4v'/>
-                    </video>
-                    <div className="absolute inset-0 flex justify-center ml-5 z-10">
-                        <img src="/phone-2.png" alt="frame" className='z-20  justify-center '/>
-                    </div>
-                </div>
-            </div>
+            <img src="/insta-pre.png" alt="frame" className='jump wow rounded animate__animated animate__fadeIn  '/>
+
         )
     }
 
@@ -97,7 +81,7 @@ function Home({ deviceType, product }) {
                         <img className='' src="/assets/imgs/elements/pattern.png" alt="Monst"/>
                         <img className='' src="/assets/imgs/elements/pattern.png" alt="Monst"/>
 
-                        {smallPhone ?  <img className='' src="/assets/imgs/elements/pattern.png" alt="Monst"/> : <img className='' src="/assets/imgs/elements/pattern-27.png" alt="Monst"/>}
+                      <img className='' src="/assets/imgs/elements/pattern-27.png" alt="Monst"/>
 
 
                         <div className=" absolute"
@@ -196,10 +180,130 @@ function Home({ deviceType, product }) {
                     </div>
                 </section>
 
+                <section className="pt-8 pb-12 md:py-16 lg:py-16 overflow-x-hidden" id="key-features">
+                    <div className="container px-4 mx-auto">
+                        <div className="flex flex-wrap lg:flex-nowrap">
+                            <div className="w-full lg:w-1/2">
+                                <div className="lg:py-6 lg:pr-77 wow animate__animated animate__fadeIn"
+                                     data-wow-delay=".3s">
+                                    <div className="mb-4">
+                                        <span
+                                            className="text-xs py-1 px-3 text-blue-500 font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown"
+                                            data-wow-delay=".9s">
+                                           Guide
+                                        </span>
+                                        <h2 className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__fadeIn"
+                                            data-wow-delay=".3s">
+                                            Slik fungerer det:
+                                        </h2>
+                                    </div>
+                                    <div className="flex items-start py-4 wow animate__animated animate__fadeIn"
+                                         data-wow-delay=".5s">
+                                        <div id="key" className="w-8 mr-5 text-blue-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+                                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 className="mb-2 text-xl font-semibold font-heading">Velg influencer</h3>
+                                            <p className="text-blueGray-400 leading-loose">Velg en influencer fra vårt utvalg som du ønsker å annonsere for.</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start py-4 wow animate__animated animate__fadeIn"
+                                         data-wow-delay=".7s">
+                                        <div className="w-8 mr-5 text-blue-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+                                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 className="mb-2 text-xl font-semibold font-heading">Bestill annonseplass</h3>
+                                            <p className="text-blueGray-400 leading-loose">Du bestiller annonsen gjennom nettsiden og vi kontakter deg per epost og avtaler detaljene.  </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start py-4 wow animate__animated animate__fadeIn"
+                                         data-wow-delay=".9s">
+                                        <div className="w-8 mr-5 text-blue-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+                                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                            </svg>
+
+
+                                        </div>
+                                        <div>
+                                            <h3 className="mb-2 text-xl font-semibold font-heading">Din annonse er live</h3>
+                                            <p className="text-blueGray-400 leading-loose">Len deg tilbake og se salgene renne inn (neida, joda).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="relative w-full lg:w-1/2 my-12 lg:my-0">
+                                <div className="wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                                    {/* <img className="jump relative mx-auto rounded-xl w-full z-10"
+                                         src="/assets/imgs/placeholders/img-1.png" alt="Monst"/>*/}
+
+
+                                    <div className=' relative z-10'><img alt='heatmap'
+                                                                         src='/tinder-pre.png'
+                                                                         className='relative z-0 '/></div>
+
+                                    <div className='z-0'><img className="  absolute top-0 left-0 w-40 -ml-12 -mt-12"
+                                                              src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/>
+                                    </div>
+                                    <div className='z-0'>
+                                        <img
+                                            className=" -z-10 absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
+                                            src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/></div>
+
+
+                                    {/*
+                                    <video loop=""
+                                           poster="https://s3-us-west-1.amazonaws.com/hawkeye-access-web-videos/urban_thumb.png"
+                                           id="selection-vid" width="100%" className="inline-video" autoPlay="" muted=""
+                                           playsInline=""
+                                           src="https://s3-us-west-1.amazonaws.com/hawkeye-access-web-videos/urban_recording.m4v"></video>
+                                 */}
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
 
 
-                <section className="pt-12">
+
+                {/*<section className="pt-12">
+                    Fordeler
+                    <div className="container py-12 mx-auto">
+                        <div className="flex flex-wrap">
+                            <div className="w-full md:w-1/2 pr-12 px-3 order-0 md:order-0 mb-12 md:mb-0 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+
+
+                            </div>
+                            <div className="w-full md:w-1/2 px-3 order-1 md:order-1">
+                                <div className="max-w-md-2">
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>*/}
+
+
+                {/*<section className="pt-12">
+                    Fordeler
                     <div className="container py-12 mx-auto">
                         <div className="flex flex-wrap">
                             <div className="w-full md:w-1/2 pr-12 px-3 order-0 md:order-0 mb-12 md:mb-0 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
@@ -264,111 +368,10 @@ function Home({ deviceType, product }) {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section>*/}
 
 
-                <section className="pt-8 pb-12 md:py-16 lg:py-16 overflow-x-hidden" id="key-features">
-                    <div className="container px-4 mx-auto">
-                        <div className="flex flex-wrap lg:flex-nowrap">
-                            <div className="w-full lg:w-1/2">
-                                <div className="lg:py-6 lg:pr-77 wow animate__animated animate__fadeIn"
-                                     data-wow-delay=".3s">
-                                    <div className="mb-4">
-                                        <span
-                                            className="text-xs py-1 px-3 text-blue-500 font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown"
-                                            data-wow-delay=".9s">
-                                           Heatmap
-                                        </span>
-                                        <h2 className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__fadeIn"
-                                            data-wow-delay=".3s">
-                                            Slik fungerer det:
-                                        </h2>
-                                    </div>
-                                    <div className="flex items-start py-4 wow animate__animated animate__fadeIn"
-                                         data-wow-delay=".5s">
-                                        <div id="key" className="w-8 mr-5 text-blue-500">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
-                                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 className="mb-2 text-xl font-semibold font-heading">Velg en pakke</h3>
-                                            <p className="text-blueGray-400 leading-loose">Velg den pakken som passer
-                                                deg best, enten du skal ha heatmap av en enkel annonse eller et helt
-                                                nettsted.</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start py-4 wow animate__animated animate__fadeIn"
-                                         data-wow-delay=".7s">
-                                        <div className="w-8 mr-5 text-blue-500">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
-                                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 className="mb-2 text-xl font-semibold font-heading">Last opp</h3>
-                                            <p className="text-blueGray-400 leading-loose">Last opp link til ditt
-                                                nettsted eller annonse</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start py-4 wow animate__animated animate__fadeIn"
-                                         data-wow-delay=".9s">
-                                        <div className="w-8 mr-5 text-blue-500">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
-                                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                      d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                      d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
-                                            </svg>
 
-
-                                        </div>
-                                        <div>
-                                            <h3 className="mb-2 text-xl font-semibold font-heading">Motta Heatmap</h3>
-                                            <p className="text-blueGray-400 leading-loose">Motta ditt Heatmap på e-post
-                                                etter 1-2 dager</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="relative w-full lg:w-1/2 my-12 lg:my-0">
-                                <div className="wow animate__animated animate__fadeIn" data-wow-delay=".5s">
-                                    {/* <img className="jump relative mx-auto rounded-xl w-full z-10"
-                                         src="/assets/imgs/placeholders/img-1.png" alt="Monst"/>*/}
-
-
-                                    <div className=' relative z-10'><img alt='heatmap'
-                                                                         src='/how-to-order.png'
-                                                                         className='relative z-0 '/></div>
-
-                                    <div className='z-0'><img className="  absolute top-0 left-0 w-40 -ml-12 -mt-12"
-                                                              src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/>
-                                    </div>
-                                    <div className='z-0'>
-                                        <img
-                                            className=" -z-10 absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
-                                            src="/assets/imgs/elements/blob-tear.svg" alt="Monst"/></div>
-
-
-                                    {/*
-                                    <video loop=""
-                                           poster="https://s3-us-west-1.amazonaws.com/hawkeye-access-web-videos/urban_thumb.png"
-                                           id="selection-vid" width="100%" className="inline-video" autoPlay="" muted=""
-                                           playsInline=""
-                                           src="https://s3-us-west-1.amazonaws.com/hawkeye-access-web-videos/urban_recording.m4v"></video>
-                                 */}
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
 
 
