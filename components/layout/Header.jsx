@@ -33,8 +33,8 @@ const Header = ({handleHidden}) => {
                         <Link href="/">
                             <a className="text-3xl font-semibold leading-none">
                                 <img
-                                    className="h-10"
-                                    src="/assets/imgs/logos/aug-logo.png"
+                                    className="h-12"
+                                    src="/media-logo.png"
                                     alt="AugTrack"
                                 />
                             </a>

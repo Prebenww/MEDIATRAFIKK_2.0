@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <title>AUGTRACK - the future of UX-testing</title>
+                <title>MEDIATRAFIKK - samarbeid med influencere</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
                     rel="preconnect"

@@ -17,24 +17,14 @@ const Contact = () => {
                                         <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animatedanimated animate__fadeIn">
                                            Noe du lurer på? Ta <span className="text-blue-500"> kontakt</span>
                                         </h2>
-                                        <p className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
-                                            Vi er <strong className="text-blue-500">AugTrack</strong>, vi gir deg et heatmap av
-                                            din {" "}
-                                            <span className="typewrite d-inline text-brand">
-                                        <TextEffect text1="nettside" text2="app" text3='annonse'/>
-                                    </span>
-                                        </p>
+
                                         <p className="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn mt-3 text-sm">Vi svarer deg så fort vi kan, ofte samme dag.</p>
                                     </div>
                                     <div className="text-center lg:text-left">
                                         <Link href="/about">
-                                            <a className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded wow animate__animatedanimated animate__fadeIn">About Us</a>
+                                            <a className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded wow animate__animatedanimated animate__fadeIn">Kontakt oss</a>
                                         </Link>
-                                        <Link href="/services">
-                                            <a className="block hover-up-2 sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded wow animate__animatedanimated animate__fadeIn" data-wow-delay=".3s">
-                                                Our Services
-                                            </a>
-                                        </Link>
+
                                     </div>
                                 </div>
                             </div>

@@ -7,6 +7,7 @@ import Slider1 from "../components/slider/Slider1"
 //shopify
 
 import { useState, useEffect, useContext } from "react"
+import Team from "./team";
 
 
 function Home({ deviceType, product }) {
@@ -190,7 +191,7 @@ function Home({ deviceType, product }) {
                                         <span
                                             className="text-xs py-1 px-3 text-blue-500 font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown"
                                             data-wow-delay=".9s">
-                                           Guide
+                                           MARKEDSPLASS
                                         </span>
                                         <h2 className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__fadeIn"
                                             data-wow-delay=".3s">
@@ -208,7 +209,7 @@ function Home({ deviceType, product }) {
                                         </div>
                                         <div>
                                             <h3 className="mb-2 text-xl font-semibold font-heading">Velg influencer</h3>
-                                            <p className="text-blueGray-400 leading-loose">Velg en influencer fra vårt utvalg som du ønsker å annonsere for.</p>
+                                            <p className="text-blueGray-400 leading-loose">Velg en influencer fra vårt utvalg som du ønsker å annonsere hos.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start py-4 wow animate__animated animate__fadeIn"
@@ -279,8 +280,98 @@ function Home({ deviceType, product }) {
                     </div>
                 </section>
 
+                {/*team*/}
+
+                <section id='plan2' className="pt-20">
+                    <div className="container text-center">
+                        <div className="max-w-lg mx-auto mb-12">
+                            <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl wow animate__animated animate__fadeIn animated" data-wow-delay=".1s">Våre kontoer</span>
+                            <h2 className="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading wow animate__animated animate__fadeIn animated" data-wow-delay=".3s">
+                                Velg <span className="text-blue-500">influenceren</span> <br />
+                                du vil jobbe med.
+                            </h2>
+                            <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn animated" data-wow-delay=".1s">Du betaler ingenting før vi har hjulpet deg med hva som skal postes og når. Vi kontakter deg per e-post etter bestilling. </p>
+                        </div>
+                        <div className="flex flex-wrap -mx-3">
+                            <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".4s">
+                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer" src="/tinder.jpeg" alt="Monst" />
+                                <p className="mt-6"><strong className="text-md">@Tindermeldinger</strong></p>
+                                <p className="text-gray-500 text-xs mb-4">106k+ følgere'</p>
+                                <div className="flex py-1 justify-center space-x-2">
+
+                                  <a href='https://www.instagram.com/tindermeldinger/'><img  src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" /></a>
+                                </div>
+                            </div>
+
+                            <div className=" w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".3s">
+                                <img  className="h-64 w-54 mx-auto rounded-xl cursor-pointer " src="/mfe.jpeg" alt="Monst" />
+                                <p className="mt-6"><strong className="text-md">@meldinger.fra.eksen</strong></p>
+                                <p className="text-gray-500 text-xs mb-4">163k+ følgere</p>
+                                <div className="flex py-1 justify-center space-x-2">
+                                    <img  src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" />
+                                </div>
+                            </div>
+
+                            <div className=" w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated " data-wow-delay=".5s">
+                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer" src="/tise.jpeg" alt="Monst" />
+                                <p className="mt-6"><strong className="text-md">@tisemeldingerr</strong></p>
+                                <p className="text-gray-500 text-xs mb-4">22k+ følgere</p>
+                                <div className="flex py-1 justify-center space-x-2">
+                                    <img  src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" />
+                                </div>
+                            </div>
+
+                            <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".7s">
+                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer " src="/gode.jpeg" alt="Monst" />
+                                <p className="mt-6"><strong className="text-md">@godenorge</strong></p>
+                                <p className="text-gray-500 text-xs mb-4">67k+ følgere</p>
+                                <div className="flex py-1 justify-center space-x-2">
+
+                                    <img  src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" />
+                                </div>
+                            </div>
+                            <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".4s">
+                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer" src="/tinder.jpeg" alt="Monst" />
+                                <p className="mt-6"><strong className="text-md">@Tindermeldinger</strong></p>
+                                <p className="text-gray-500 text-xs mb-4">106k+ følgere</p>
+                                <div className="flex py-1 justify-center space-x-2">
+
+                                    <a href='https://www.instagram.com/tindermeldinger/'><img  src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" /></a>
+                                </div>
+                            </div>
+
+                            <div className=" w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".3s">
+                                <img  className="h-64 w-54 mx-auto rounded-xl cursor-pointer " src="/mfe.jpeg" alt="Monst" />
+                                <p className="mt-6"><strong className="text-md">@meldinger.fra.eksen</strong></p>
+                                <p className="text-gray-500 text-xs mb-4">163k+ følgere</p>
+                                <div className="flex py-1 justify-center space-x-2">
+                                    <img  src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" />
+                                </div>
+                            </div>
+
+                            <div className=" w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated " data-wow-delay=".5s">
+                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer" src="/tise.jpeg" alt="Monst" />
+                                <p className="mt-6"><strong className="text-md">@tisemeldingerr</strong></p>
+                                <p className="text-gray-500 text-xs mb-4">22k+ følgere</p>
+                                <div className="flex py-1 justify-center space-x-2">
+                                    <img  src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" />
+                                </div>
+                            </div>
+
+                            <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".7s">
+                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer " src="/gode.jpeg" alt="Monst" />
+                                <p className="mt-6"><strong className="text-md">@godenorge</strong></p>
+                                <p className="text-gray-500 text-xs mb-4">67k+ følgere</p>
+                                <div className="flex py-1 justify-center space-x-2">
+
+                                    <img  src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" />
+                                </div>
+                            </div>
 
 
+                        </div>
+                    </div>
+                </section>
 
                 {/*<section className="pt-12">
                     Fordeler
@@ -630,16 +721,12 @@ function Home({ deviceType, product }) {
                         <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
                             <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
                                 <h2 className="text-3xl md:text-4xl font-bold font-heading wow animate__animated animate__fadeInDown">
-                                    <span>Vi hjelper deg med</span>
-                                    <br/>
-                                    <span className="text-blue-500">Brukervennlighet </span>
+                                    <span>Vi hjelper deg hele veien</span>
 
                                 </h2>
                             </div>
                             <div className="w-full lg:w-1/2">
-                                <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">Vi
-                                    er eksperter på brukervennlig design og kan hjelpe deg å optmailisere ditt nettsted,
-                                    annonse eller nettbutikk for å maksimere koverteringer slik at du når dine mål </p>
+                                <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">Vi kontakter deg etter bestilling og hjelper deg gjennom hele prosessen. Vi fikser bilder / video til annonsen, samt kommunikasjon og oppfølging med influenceren.   </p>
                             </div>
                         </div>
                         <div className="flex flex-wrap -mx-3 -mb-6 text-center">
@@ -667,8 +754,7 @@ function Home({ deviceType, product }) {
                                     <img className="h-36 mx-auto my-4" src="/assets/imgs/illustrations/space.svg"
                                          alt="Monst"/>
                                     <h3 className="mb-2 font-bold font-heading text-xl">Planlegging</h3>
-                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi hjelper deg å planlegge
-                                        og implemetere de beste løsningene for din tjeneste eller nettside</p>
+                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi planlegger tidspunkt for annonsering og andre detaljer rundt annonseringen. </p>
                                 </div>
                             </div>
                             <div className="hover-up-5 w-full lg:w-1/3 px-3 mb-6">
@@ -680,8 +766,7 @@ function Home({ deviceType, product }) {
                                     <img className="h-36 mx-auto my-4" src="/assets/imgs/illustrations/tasks.svg"
                                          alt="Monst"/>
                                     <h3 className="mb-2 font-bold font-heading text-xl">Gjennomføring</h3>
-                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi driver med Heatmaps så
-                                        vi vet at du at du sannsynligvis ikke leser dette - så kredz til deg!</p>
+                                    <p className="text-sm text-blueGray-400 leading-relaxed">Vi sørger for at annonseringen gjennomføres i henhold til dine forventninger.</p>
                                 </div>
                             </div>
                         </div>
@@ -695,9 +780,9 @@ function Home({ deviceType, product }) {
                         <div className="relative py-20 px-4 lg:p-20">
                             <div className="max-w-lg mx-auto text-center">
                                 <h2 className="mb-4 text-3xl lg:text-4xl font-bold font-heading wow animate__animated animate__fadeIn">
-                                    <span>Jobbe som  </span>
-                                    <span className="text-blue-500">tester </span>
-                                    <span>hos oss?</span>
+                                    <span>Har du noen  </span>
+                                    <span className="text-blue-500">spørsmål </span>
+                                    <span>til oss?</span>
                                 </h2>
                                 <p className="mb-8 text-blueGray-400 wow animate__animated animate__fadeIn"
                                    data-wow-delay=".3s">
