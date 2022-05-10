@@ -1,7 +1,7 @@
 import CounterUp from "../components/elements/Counterup"
 import TextEffect from "../components/elements/TextEffect"
 import Layout from "../components/layout/Layout"
-import Slider1 from "../components/slider/Slider1"
+import { getProductsInCollection } from "../lib/shopify"
 
 
 //shopify

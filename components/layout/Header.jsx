@@ -1,17 +1,14 @@
 import Link from "next/link";
-import React from "react";
 import { useState, useEffect } from "react";
+import React, {useContext} from "react";
+import {CartContext} from "../../context/shopContext";
+import MiniCart from "../MiniCart";
 
 const Header = ({handleHidden}) => {
-    const [scroll, setScroll] = useState(0)
-    useEffect(() => {
-        document.addEventListener("scroll", () => {
-          const scrollCheck = window.scrollY > 100
-          if (scrollCheck !== scroll) {
-            setScroll(scrollCheck)
-          }
-        })
-      })
+
+
+
+
 
     useEffect(() => {
 
@@ -39,6 +36,7 @@ const Header = ({handleHidden}) => {
                                 />
                             </a>
                         </Link>
+                        <MiniCart cart={cart} />
                         <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
                             <li className="group relative pt-4 pb-4 has-child">
                                 <Link href="/">

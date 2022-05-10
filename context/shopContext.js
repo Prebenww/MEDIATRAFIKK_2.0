@@ -4,10 +4,12 @@ import { createCheckout, updateCheckout } from '../lib/shopify'
 const CartContext = createContext()
 
 export default function ShopProvider({ children }) {
+  console.log('CHILD: ', children)
   const [cart, setCart] = useState([])
   const [cartOpen, setCartOpen] = useState(false)
   const [checkoutId, setCheckoutId] = useState('')
   const [checkoutUrl, setCheckoutUrl] = useState('')
+  const [checkoutNote, setCheckoutNote] = useState('')
 
   useEffect(() => {
     if (localStorage.checkout_id) {
@@ -21,6 +23,8 @@ export default function ShopProvider({ children }) {
 
       setCheckoutId(cartObject[1].id)
       setCheckoutUrl(cartObject[1].webUrl)
+      setCheckoutNote(cartObject[1].checkoutNote)
+
     }
 
   }, [])
@@ -32,22 +36,24 @@ export default function ShopProvider({ children }) {
     if(cart.length === 0) {
       setCart([newItem])
 
-      const checkout = await createCheckout(newItem.id, newItem.variantQuantity)
+      const checkout = await createCheckout(newItem.id, newItem.variantQuantity, checkoutNote)
 
       setCheckoutId(checkout.id)
       setCheckoutUrl(checkout.webUrl)
+      // setCheckoutNote(checkout.checkoutNote)
+
 
       localStorage.setItem("checkout_id", JSON.stringify([newItem, checkout]))
     } else {
       let newCart = []
       let added = false
-      
+
       cart.map(item => {
         if (item.id === newItem.id) {
           item.variantQuantity++
           newCart = [...cart]
           added = true
-        } 
+        }
       })
 
       if(!added) {
@@ -76,16 +82,18 @@ export default function ShopProvider({ children }) {
 
 
   return (
-    <CartContext.Provider value={{ 
-      cart,
-      cartOpen,
-      setCartOpen,
-      addToCart,
-      checkoutUrl,
-      removeCartItem
-    }}>
-      {children}
-    </CartContext.Provider>
+      <CartContext.Provider value={{
+        cart,
+        cartOpen,
+        setCartOpen,
+        addToCart,
+        checkoutUrl,
+        removeCartItem,
+        checkoutNote,
+        setCheckoutNote,
+      }}>
+        {children}
+      </CartContext.Provider>
   )
 }
 
