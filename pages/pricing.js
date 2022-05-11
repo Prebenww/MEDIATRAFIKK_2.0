@@ -6,7 +6,7 @@ const Pricing = () => {
     return (
         <>
             <Layout>
-                <section className="relative -mt-24 pt-24">
+                {/*<section className="relative -mt-24 pt-24">
                     <div className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-100 z-0" style={{ "z-index": "-1" }}></div>
                     <div className="container">
                         <div className="flex flex-wrap items-center -mx-3">
@@ -40,8 +40,8 @@ const Pricing = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="py-6">
+                </section>*/}
+                {/*   <section className="py-6">
                     <div className="container">
                         <div className="flex flex-wrap justify-between pt-8 pb-16">
                             <div className="flex w-1/2 lg:w-auto py-4 wow animate__animatedanimated animate__fadeIn" data-wow-delay=".2s">
@@ -95,148 +95,117 @@ const Pricing = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="pt-20 xl:bg-contain bg-top bg-no-repeat" style={{ backgroundImage: "url('assets/imgs/backgrounds/intersect.svg')" }}>
+                </section>*/}
+                <section className="pt-20 xl:bg-contain bg-top bg-no-repeat"
+                         style={{backgroundImage: "url('assets/imgs/backgrounds/intersect.svg')"}}>
                     <div className="container">
                         <div className="text-center mb-16">
-                            <h2 className="max-w-lg mx-auto mb-4 text-4xl font-bold font-heading wow animate__animated animate__fadeIn" data-wow-delay=".2s">
-                                <span>Start saving time today and </span>
-                                <span className="text-blue-500">choose </span>
-                                <span>your best plan</span>
+                            <h2 className="max-w-lg mx-auto mb-4 text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
+                                data-wow-delay=".2s">
+                                <span>Velg den </span>
+                                <span className="text-blue-500">pakken </span>
+                                <span>som passer deg best</span>
                             </h2>
-                            <p className="max-w-sm mx-auto text-lg text-blueGray-400 wow animate__animated animate__fadeInDown" data-wow-delay=".5s">
-                                Best for freelance developers who need to save their time
+                            <p className="max-w-sm mx-auto text-lg text-blueGray-400 wow animate__animated animate__fadeInDown"
+                               data-wow-delay=".5s">
+
                             </p>
                         </div>
                         <div className="flex flex-wrap -mx-3">
                             <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
-                                <div className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn" data-wow-delay=".2s">
-                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/startup.svg" alt="Monst" />
-                                    <h3 className="mb-2 text-4xl font-bold font-heading">Startup</h3>
-                                    <span className="text-4xl text-blue-500 font-bold font-heading">$45.99</span>
-                                    <p className="mt-2 mb-8 text-blueGray-400">user per month</p>
+                                <div
+                                    className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".2s">
+                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/startup.svg"
+                                         alt="Monst"/>
+                                    <h3 className="mb-2 text-4xl font-bold font-heading">Enkel</h3>
+                                    <span className="text-4xl text-blue-500 font-bold font-heading">1 999 NOK</span>
+                                    <p className="mt-2 mb-8 text-blueGray-400"></p>
                                     <div className="flex flex-col items-center mb-8">
                                         <ul className="text-blueGray-400">
                                             <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                                 </svg>
-                                                <span>3 Emails</span>
+                                                <span>1 stk historie</span>
                                             </li>
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>1 Datebases</span>
-                                            </li>
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>Unlimited Domains</span>
-                                            </li>
-                                            <li className="flex">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>10 GB Storage</span>
-                                            </li>
+
+                                            <br/>
+
                                         </ul>
                                     </div>
                                     <div>
-                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded" href="#">
-                                            Start Free Trial
+                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                                           href="#">
+                                            Kjøp
                                         </a>
-                                        <a className="block sm:inline-block py-4 px-6 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded" href="#">
-                                            Purchase
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
                             <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
-                                <div className="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded shadow wow animate__animated animate__fadeIn" data-wow-delay=".4s">
-                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/agency.svg" alt="Monst" />
-                                    <h3 className="mb-2 text-4xl font-bold font-heading">Agency</h3>
-                                    <span className="text-4xl font-bold font-heading">$65.99</span>
-                                    <p className="mt-2 mb-8">user per month</p>
+                                <div
+                                    className="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded shadow wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".4s">
+                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/agency.svg" alt="Monst"/>
+                                    <h3 className="mb-2 text-4xl font-bold font-heading">Giga</h3>
+                                    <span className="text-4xl font-bold font-heading">6 800 NOK</span>
+
                                     <div className="flex flex-col items-center mb-8">
                                         <ul>
                                             <li className="flex items-center mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                                 </svg>
-                                                <span>6 Emails</span>
+                                                <span>1 stk innlegg</span>
                                             </li>
                                             <li className="flex items-center mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                <svg className="w-6 h-6 mr-2 text-green-500"
+                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                     stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                          stroke-width="2"
+                                                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                                 </svg>
-                                                <span>4 Datebases</span>
+                                                <span>2 stk historie</span>
                                             </li>
-                                            <li className="flex items-center mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>Unlimited Domains</span>
-                                            </li>
-                                            <li className="flex items-center">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>35 GB Storage</span>
-                                            </li>
+                                           <br/>
+
                                         </ul>
                                     </div>
                                     <div>
-                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded" href="#">
-                                            Start Free Trial
+                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded"
+                                           href="#">
+                                            Kjøp
                                         </a>
-                                        <a className="block sm:inline-block py-4 px-6 text-xs font-semibold leading-none border border border-blue-400 hover:border-blue-400 rounded" href="#">
-                                            Purchase
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
                             <div className="w-full lg:w-1/3 px-3 mb-6">
-                                <div className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn" data-wow-delay=".6s">
-                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/enterprise.svg" alt="Monst" />
+                                <div
+                                    className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
+                                    data-wow-delay=".6s">
+                                    <img className="h-20 mb-6 mx-auto" src="/assets/imgs/icons/enterprise.svg"
+                                         alt="Monst"/>
                                     <h3 className="mb-2 text-4xl font-bold font-heading">Enterprise</h3>
-                                    <span className="text-4xl text-blue-500 font-bold font-heading">$85.99</span>
-                                    <p className="mt-2 mb-8 text-blueGray-400">user per month</p>
+                                    <span className="text-4xl text-blue-500 font-bold font-heading">-</span>
+                                    <p className="mt-2 mb-8 text-blueGray-400">Ta kontakt for å diskutere et samarbeid</p>
                                     <div className="flex flex-col items-center mb-8">
-                                        <ul className="text-blueGray-400">
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>12 Emails</span>
-                                            </li>
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>8 Datebases</span>
-                                            </li>
-                                            <li className="flex mb-3">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>Unlimited Domains</span>
-                                            </li>
-                                            <li className="flex">
-                                                <svg className="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                                <span>50 GB Storage</span>
-                                            </li>
-                                        </ul>
+
                                     </div>
                                     <div>
-                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded" href="#">
-                                            Start Free Trial
-                                        </a>
-                                        <a className="block sm:inline-block py-4 px-6 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded" href="#">
-                                            Purchase
+                                        <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                                           href="mailto:preben@mediatrafikk.no?subject=Til%20Mediatrafikk&body=Jeg%20%C3%B8nsker%20%C3%A5%20bli%20kontaktet.">
+                                            Kontakt oss
                                         </a>
                                     </div>
                                 </div>
@@ -244,7 +213,7 @@ const Pricing = () => {
                         </div>
                     </div>
                 </section>
-                <section className="py-20">
+                {/* <section className="py-20">
                     <div className="container">
                         <div className="max-w-lg mb-16">
                             <h2 className="mb-4 text-3xl lg:text-4xl font-bold font-heading wow animate__animatedanimated animate__fadeIn" data-wow-delay=".1s">
@@ -427,55 +396,71 @@ const Pricing = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="pb-20">
+                </section>*/}
+               {/* <section className="pb-20">
                     <div className="container">
                         <div className="max-w-2xl mx-auto text-center">
                             <div className="max-w-md mb-8 mx-auto">
-                                <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl wow animate__animatedanimated animate__fadeIn" data-wow-delay=".1s">
+                                <span
+                                    className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl wow animate__animatedanimated animate__fadeIn"
+                                    data-wow-delay=".1s">
                                     Contact Us
                                 </span>
-                                <h2 className="mt-2 text-4xl font-bold font-heading wow animate__animatedanimated animate__fadeIn" data-wow-delay=".s">
-                                    We will <span className="text-blue-500">be glad</span> to hear from you!
+                                <h2 className="mt-2 text-4xl font-bold font-heading wow animate__animatedanimated animate__fadeIn"
+                                    data-wow-delay=".s">
+                                    Eller <span className="text-blue-500">kontakt oss</span> for å avtale manuelt.
                                 </h2>
                             </div>
                             <div>
                                 <form>
-                                    <div className="mb-4 text-sm wow animate__animatedanimated animate__fadeIn" data-wow-delay=".5s">
-                                        <span className="mr-4 font-semibold">Departament:</span>
-                                        <label className="mr-4">
-                                            <input className="mr-1" type="radio" name="department" value="1" checked="" />
-                                            <span>Support</span>
-                                        </label>
-                                        <label>
-                                            <input className="mr-1" type="radio" name="department" value="2" />
-                                            <span>Sales</span>
-                                        </label>
+                                    <div className="mb-4 text-sm wow animate__animatedanimated animate__fadeIn"
+                                         data-wow-delay=".5s">
+
+
                                     </div>
-                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn" data-wow-delay=".3s">
-                                        <input className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Subject" />
+                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn"
+                                         data-wow-delay=".3s">
+                                        <input
+                                            className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                                            type="text" placeholder="Subject"/>
                                     </div>
-                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn" data-wow-delay=".3s">
-                                        <input className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Name" />
+                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn"
+                                         data-wow-delay=".3s">
+                                        <input
+                                            className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                                            type="text" placeholder="Name"/>
                                     </div>
-                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn" data-wow-delay=".3s">
-                                        <input className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="email" placeholder="name@example.com" />
+                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn"
+                                         data-wow-delay=".3s">
+                                        <input
+                                            className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                                            type="email" placeholder="name@example.com"/>
                                     </div>
-                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn" data-wow-delay=".3s">
-                                        <textarea className="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none" placeholder="Message..."></textarea>
+                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn"
+                                         data-wow-delay=".3s">
+                                        <textarea
+                                            className="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
+                                            placeholder="Message..."></textarea>
                                     </div>
-                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn" data-wow-delay=".3s">
+                                    <div className="mb-4 wow animate__animatedanimated animate__fadeIn"
+                                         data-wow-delay=".3s">
                                         <label className="flex px-2 bg-blueGray-50 rounded">
-                                            <input className="hidden" type="file" name="Choose file" />
-                                            <span className="my-1 ml-auto px-4 py-3 text-xs text-white font-semibold leading-none bg-blueGray-500 hover:bg-blueGray-600 rounded cursor-pointer"> Browse</span>
+                                            <input className="hidden" type="file" name="Choose file"/>
+                                            <span
+                                                className="my-1 ml-auto px-4 py-3 text-xs text-white font-semibold leading-none bg-blueGray-500 hover:bg-blueGray-600 rounded cursor-pointer"> Browse</span>
                                         </label>
                                     </div>
-                                    <div className="flex justify-between items-center wow animate__animatedanimated animate__fadeIn" data-wow-delay=".3s">
+                                    <div
+                                        className="flex justify-between items-center wow animate__animatedanimated animate__fadeIn"
+                                        data-wow-delay=".3s">
                                         <label>
-                                            <input className="mr-1" type="checkbox" name="terms" value="1" />
-                                            <span className="text-sm font-semibold">I agree to terms and conditions.</span>
+                                            <input className="mr-1" type="checkbox" name="terms" value="1"/>
+                                            <span
+                                                className="text-sm font-semibold">I agree to terms and conditions.</span>
                                         </label>
-                                        <button className="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded" type="submit">
+                                        <button
+                                            className="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
+                                            type="submit">
                                             Submit
                                         </button>
                                     </div>
@@ -483,46 +468,60 @@ const Pricing = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="py-20 bg-blue-500">
+                </section>*/}
+               {/* <section className="py-20 bg-blue-500">
                     <div className="container">
                         <div className="text-center max-w-xl mx-auto">
                             <h2 className="mb-4 text-3xl lg:text-3xl text-white font-bold font-heading">
                                 <span>Subscribe now to </span>
-                                <span className="text-blue-200">Our Newsletter</span> <br />
+                                <span className="text-blue-200">Our Newsletter</span> <br/>
                                 <span>and get the Coupon code.</span>
                             </h2>
                             <p className="mb-8 text-blueGray-200">All your information is completely confidential</p>
                             <div className="flex flex-wrap max-w-lg mx-auto">
-                                <div className="flex w-full md:w-2/3 px-3 mb-3 md:mb-0 md:mr-6 bg-blue-500 border border-blue-300 rounded">
-                                    <svg className="h-6 w-6 my-auto text-blue-300" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
-                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <div
+                                    className="flex w-full md:w-2/3 px-3 mb-3 md:mb-0 md:mr-6 bg-blue-500 border border-blue-300 rounded">
+                                    <svg className="h-6 w-6 my-auto text-blue-300" xmlns="http://www.w3.org/2000/svg"
+                                         viewbox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                                     </svg>
-                                    <input className="w-full pl-3 py-4 text-xs text-white placeholder-white font-semibold leading-none bg-blue-500 outline-none" type="text" placeholder="Type your e-mail" />
+                                    <input
+                                        className="w-full pl-3 py-4 text-xs text-white placeholder-white font-semibold leading-none bg-blue-500 outline-none"
+                                        type="text" placeholder="Type your e-mail"/>
                                 </div>
-                                <button className="w-full md:w-auto py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out" type="submit">
+                                <button
+                                    className="w-full md:w-auto py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
+                                    type="submit">
                                     Sign Up
                                 </button>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="py-20">
+                </section>*/}
+                {/*<section className="py-20">
                     <div className="container">
                         <div className="max-w-2xl lg:max-w-3xl mx-auto">
                             <div className="mb-12 text-center">
-                                <h2 className="text-4xl font-bold font-heading wow animate__animatedanimated animate__fadeIn animated" data-wow-delay=".1s">
+                                <h2 className="text-4xl font-bold font-heading wow animate__animatedanimated animate__fadeIn animated"
+                                    data-wow-delay=".1s">
                                     Get in touch!
                                 </h2>
-                                <p className="text-blueGray-400 wow animate__animatedanimated animate__fadeIn animated" data-wow-delay=".5s">
+                                <p className="text-blueGray-400 wow animate__animatedanimated animate__fadeIn animated"
+                                   data-wow-delay=".5s">
                                     We will be glad to hear from you
                                 </p>
                             </div>
                             <div className="flex flex-wrap -mx-3 text-center">
-                                <div className="w-1/2 lg:w-1/3 px-3 mb-12 wow animate__animatedanimated animate__fadeIn animated" data-wow-delay=".1s">
-                                    <svg className="mb-6 h-8 w-8 mx-auto text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                <div
+                                    className="w-1/2 lg:w-1/3 px-3 mb-12 wow animate__animatedanimated animate__fadeIn animated"
+                                    data-wow-delay=".1s">
+                                    <svg className="mb-6 h-8 w-8 mx-auto text-blue-600"
+                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                         stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                                     </svg>
                                     <div className="leading-relaxed">
                                         <span className="text-sm text-blueGray-400">Phone</span>
@@ -530,9 +529,14 @@ const Pricing = () => {
                                         <p>+ 1 6532-430-309</p>
                                     </div>
                                 </div>
-                                <div className="w-1/2 lg:w-1/3 px-3 mb-12 wow animate__animatedanimated animate__fadeIn animated" data-wow-delay=".3s">
-                                    <svg className="mb-6 h-8 w-8 mx-auto text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <div
+                                    className="w-1/2 lg:w-1/3 px-3 mb-12 wow animate__animatedanimated animate__fadeIn animated"
+                                    data-wow-delay=".3s">
+                                    <svg className="mb-6 h-8 w-8 mx-auto text-blue-600"
+                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                         stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                     </svg>
                                     <div className="leading-relaxed">
                                         <span className="text-sm text-blueGray-400">E-mail</span>
@@ -540,10 +544,16 @@ const Pricing = () => {
                                         <p>pat@example.com</p>
                                     </div>
                                 </div>
-                                <div className="w-full lg:w-1/3 px-3 mb-12 wow animate__animatedanimated animate__fadeIn animated" data-wow-delay=".5s">
-                                    <svg className="mb-6 h-8 w-8 mx-auto text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <div
+                                    className="w-full lg:w-1/3 px-3 mb-12 wow animate__animatedanimated animate__fadeIn animated"
+                                    data-wow-delay=".5s">
+                                    <svg className="mb-6 h-8 w-8 mx-auto text-blue-600"
+                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                         stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                     </svg>
                                     <div className="leading-relaxed">
                                         <span className="text-sm text-blueGray-400">Address</span>
@@ -554,45 +564,61 @@ const Pricing = () => {
                             </div>
                             <div>
                                 <form>
-                                    <div className="mb-4 text-sm wow animate__animatedanimated animate__fadeIn animated" data-wow-delay=".1s">
+                                    <div className="mb-4 text-sm wow animate__animatedanimated animate__fadeIn animated"
+                                         data-wow-delay=".1s">
                                         <span className="mr-4 font-semibold">Departament:</span>
                                         <label className="mr-4">
-                                            <input className="mr-1" type="radio" name="department" value="1" checked="" />
+                                            <input className="mr-1" type="radio" name="department" value="1"
+                                                   checked=""/>
                                             <span>Support</span>
                                         </label>
                                         <label>
-                                            <input className="mr-1" type="radio" name="department" value="2" />
+                                            <input className="mr-1" type="radio" name="department" value="2"/>
                                             <span>Sales</span>
                                         </label>
                                     </div>
-                                    <div className="flex flex-wrap mb-4 -mx-3 wow animate__animatedanimated animate__fadeIn animated" data-wow-delay=".3s">
+                                    <div
+                                        className="flex flex-wrap mb-4 -mx-3 wow animate__animatedanimated animate__fadeIn animated"
+                                        data-wow-delay=".3s">
                                         <div className="w-full lg:w-1/2 px-3 mb-4 lg:mb-0">
                                             <div className="mb-4">
-                                                <input className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Subject" />
+                                                <input
+                                                    className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                                                    type="text" placeholder="Subject"/>
                                             </div>
                                             <div className="mb-4">
-                                                <input className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Name" />
+                                                <input
+                                                    className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                                                    type="text" placeholder="Name"/>
                                             </div>
                                             <div className="mb-4">
-                                                <input className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="email" placeholder="name@example.com" />
+                                                <input
+                                                    className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                                                    type="email" placeholder="name@example.com"/>
                                             </div>
                                             <div>
                                                 <label className="flex px-2 bg-blueGray-50 rounded">
-                                                    <input className="hidden" type="file" name="Choose file" />
-                                                    <span className="my-1 ml-auto px-4 py-3 text-xs text-white font-semibold leading-none bg-blueGray-500 hover:bg-blueGray-600 rounded cursor-pointer"> Browse</span>
+                                                    <input className="hidden" type="file" name="Choose file"/>
+                                                    <span
+                                                        className="my-1 ml-auto px-4 py-3 text-xs text-white font-semibold leading-none bg-blueGray-500 hover:bg-blueGray-600 rounded cursor-pointer"> Browse</span>
                                                 </label>
                                             </div>
                                         </div>
                                         <div className="w-full lg:w-1/2 px-3">
-                                            <textarea className="w-full h-full p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none" placeholder="Message..."></textarea>
+                                            <textarea
+                                                className="w-full h-full p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
+                                                placeholder="Message..."></textarea>
                                         </div>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <label>
-                                            <input className="mr-1" type="checkbox" name="terms" value="1" />
-                                            <span className="text-sm font-semibold">I agree to terms and conditions.</span>
+                                            <input className="mr-1" type="checkbox" name="terms" value="1"/>
+                                            <span
+                                                className="text-sm font-semibold">I agree to terms and conditions.</span>
                                         </label>
-                                        <button className="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded" type="submit">
+                                        <button
+                                            className="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                                            type="submit">
                                             Submit
                                         </button>
                                     </div>
@@ -600,7 +626,7 @@ const Pricing = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section>*/}
             </Layout>
         </>
     );

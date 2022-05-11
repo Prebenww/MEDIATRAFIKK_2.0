@@ -2,6 +2,7 @@ import CounterUp from "../components/elements/Counterup"
 import TextEffect from "../components/elements/TextEffect"
 import Layout from "../components/layout/Layout"
 import { getProductsInCollection } from "../lib/shopify"
+import Link from "next/link";
 
 
 //shopify
@@ -292,9 +293,9 @@ function Home({ deviceType, product }) {
                             </h2>
                             <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn animated" data-wow-delay=".1s">Du betaler ingenting før vi har hjulpet deg med hva som skal postes og når. Vi kontakter deg per e-post etter bestilling. </p>
                         </div>
-                        <div className="flex flex-wrap -mx-3">
+                        <div className="grid grid-cols-1  ">
                             <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".4s">
-                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer" src="/tinder.jpeg" alt="Monst" />
+                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer" src="/tinder-card.png" alt="Monst" />
                                 <p className="mt-6"><strong className="text-md">@Tindermeldinger</strong></p>
                                 <p className="text-gray-500 text-xs mb-4">106k+ følgere'</p>
                                 <div className="flex py-1 justify-center space-x-2">
@@ -303,17 +304,19 @@ function Home({ deviceType, product }) {
                                 </div>
                             </div>
 
-                            <div className=" w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".3s">
-                                <img  className="h-64 w-54 mx-auto rounded-xl cursor-pointer " src="/mfe.jpeg" alt="Monst" />
+                            <Link href='/pricing' className=" w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".3s">
+                                <a>
+                                <img  className="h-64 w-54 mx-auto rounded-xl cursor-pointer " src="/barb-test-2.png" alt="Monst" />
                                 <p className="mt-6"><strong className="text-md">@meldinger.fra.eksen</strong></p>
                                 <p className="text-gray-500 text-xs mb-4">163k+ følgere</p>
                                 <div className="flex py-1 justify-center space-x-2">
                                     <img  src="/assets/imgs/icons/instagram-blue.svg" alt="Monst" />
                                 </div>
-                            </div>
+                                </a>
+                            </Link>
 
                             <div className=" w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated " data-wow-delay=".5s">
-                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer" src="/tise.jpeg" alt="Monst" />
+                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer" src="/tise-card.png" alt="Monst" />
                                 <p className="mt-6"><strong className="text-md">@tisemeldingerr</strong></p>
                                 <p className="text-gray-500 text-xs mb-4">22k+ følgere</p>
                                 <div className="flex py-1 justify-center space-x-2">
@@ -322,7 +325,7 @@ function Home({ deviceType, product }) {
                             </div>
 
                             <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-12 hover-up-5 wow animate__animated animate__fadeIn animated" data-wow-delay=".7s">
-                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer " src="/gode.jpeg" alt="Monst" />
+                                <img className="h-64 w-20 mx-auto rounded-xl cursor-pointer " src="/gode-card.png" alt="Monst" />
                                 <p className="mt-6"><strong className="text-md">@godenorge</strong></p>
                                 <p className="text-gray-500 text-xs mb-4">67k+ følgere</p>
                                 <div className="flex py-1 justify-center space-x-2">
