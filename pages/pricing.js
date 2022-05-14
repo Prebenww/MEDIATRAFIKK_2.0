@@ -183,7 +183,7 @@ const Pricing = () => {
                                     </div>
                                     <div>
                                         <a className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded"
-                                           href="#">
+                                           href="https://mediatrafikk-shop.vercel.app/products/annonsering-pa-meldinger-fra-eksen-1">
                                             Kjøp
                                         </a>
 
@@ -397,8 +397,6 @@ const Pricing = () => {
                         </div>
                     </div>
                 </section>*/}
-
-
 
             </Layout>
         </>
